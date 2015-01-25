@@ -49,7 +49,7 @@ names(joinSubject)<-"subject"
 tidyData<-cbind(joinSubject,joinLabel,joinData) # tidy data set
 dim(tidyData)
 names(tidyData)
-write.table(tidyData,"merged_data.txt") # store the tidy dataset in merged_data.txt file
+write.table(tidyData,"merged_data.txt", sep="\t") # store the tidy dataset in merged_data.txt file
 
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 library(plyr)
@@ -57,4 +57,4 @@ library(reshape)
 tidyMeanData<-ddply(melt(tidyData, id.vars=c("subject", "activity")), .(subject, activity), summarise, MeanSamples=mean(value))
 names(tidyMeanData) #"subject"     "activity"    "MeanSamples"
 nrow(tidyMeanData) # 180
-write.table(tidyMeanData,"tidyMeanData.txt") # write to a file
+write.table(tidyMeanData,"tidyMeanData.txt", sep="\t") # write to a file
