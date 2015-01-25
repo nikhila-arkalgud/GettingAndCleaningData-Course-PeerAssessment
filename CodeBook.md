@@ -2,9 +2,20 @@
 
 This Codebook describes variables used in the two tidy data sets that are created using this run_analysis.R script. 
 
+ File tidyMeanData.txt:
+ ----------------------
+ 
+ Tab delimited file with 180 observations with 3 variables
+
+-subject: ID of the subject who took the test        
+
+-activity: activity name
+
+-MeanSamples: average of each variable for each activity and each subject 
+
 
 File merged_data.txt:
---------------------
+----------------------
 
 Tab delimited data set, with 10299 observations of 68 variables
 
@@ -47,18 +58,5 @@ Tab delimited data set, with 10299 observations of 68 variables
         fBodyGyroMag
 
         fBodyGyroJerkMag
-                        
- 
- File tidyMeanData.txt
- ---------------------
- 
- Tab delimited file with 180 observations with 3 variables
- 
-
--subject: ID of the subject who took the test        
-
--activity: activity name
-
--MeanSamples: average of each variable for each activity and each subject 
 
 
