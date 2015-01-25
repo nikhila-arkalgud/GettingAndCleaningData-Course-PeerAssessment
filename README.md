@@ -27,6 +27,6 @@ Intructions to run the project:
 
 1. To run the R Script, use the run_analysis.R script. Ensure the data files are in the working directory of your R session.
 
-2. "merged_data.txt" is a tab delimited file contains the complete tidy data.
+2. "merged_data.txt" is a tab delimited file contains the tidy data with the mean and standard deviation values extracted for each feature.
 
 3. "tidyMeanData.txt" is a tab delimited file contains the tidy data file generated with the average of each variable for each activity and each subject.
